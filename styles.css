@@ -12,8 +12,11 @@ body {
 /* ----- TYPOGRAPHY ----- */
 
 h1 {
-  margin: 0;
   font-size: 2rem;
+}
+
+h1, h2 {
+  margin: 0;
   line-height: 1.08;
 }
 
@@ -28,6 +31,18 @@ p {
 
 .feature-date {
   font-size: 0.75rem;
+}
+
+.blog-date {
+  font-size: 0.875rem;
+}
+
+.view-more {
+  margin: 0;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
 }
 
 /* ----- LAYOUT ----- */
@@ -49,9 +64,35 @@ header {
 }
 
 .hero {
-  padding: 5.375em 0 1.5em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+  padding-bottom: 1.5em;
   background-image: url(img/blog-image-hero.jpg);
   background-size: cover;
+  height: 293px;
+}
+
+.summary {
+  max-width: 615px;
+}
+
+.blog-grid {
+  margin: 2.125em auto 1em auto;
+  display: grid;
+  gap: 40px 0;
+  grid-template-columns: 1fr;
+}
+
+.card > img {
+  width: 100%;
+}
+
+#card-4,
+#card-5,
+#card-6 {
+  display: none;
 }
 
 /* ----- NAVIGATION ----- */
