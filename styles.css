@@ -20,6 +20,10 @@ h1, h2 {
   line-height: 1.08;
 }
 
+h2 {
+  color: #141414
+}
+
 p {
   line-height: 1.25;
   margin: 0.5em 0;
@@ -29,12 +33,18 @@ p {
   color: white;
 }
 
-.feature-date {
+.feature-date,
+.footer-title,
+.copyright {
   font-size: 0.75rem;
 }
 
 .blog-date {
   font-size: 0.875rem;
+}
+
+.preview {
+  color: #505050;
 }
 
 .view-more {
@@ -43,6 +53,15 @@ p {
   font-weight: bold;
   text-align: center;
   text-decoration: underline;
+}
+
+.footer-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.copyright {
+  margin: 0;
 }
 
 /* ----- LAYOUT ----- */
@@ -78,10 +97,14 @@ header {
   max-width: 615px;
 }
 
+.blog-cards {
+  padding-bottom: 43px;
+}
+
 .blog-grid {
   margin: 2.125em auto 1em auto;
   display: grid;
-  gap: 40px 0;
+  gap: 40px;
   grid-template-columns: 1fr;
 }
 
@@ -93,6 +116,12 @@ header {
 #card-5,
 #card-6 {
   display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 2.25em 0;
+  background-color: #202020;
 }
 
 /* ----- NAVIGATION ----- */
