@@ -9,8 +9,37 @@ body {
   font-family: "Source Sans 3", sans-serif;
 }
 
+/* ----- TYPOGRAPHY ----- */
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.08;
+}
+
+p {
+  line-height: 1.25;
+  margin: 0.5em 0;
+}
+
+.white-text {
+  color: white;
+}
+
+.feature-date {
+  font-size: 0.75rem;
+}
+
+/* ----- LAYOUT ----- */
+
 header {
   padding: 1.125em 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1160px;
 }
 
 .header-container {
@@ -18,6 +47,14 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
+.hero {
+  padding: 5.375em 0 1.5em 0;
+  background-image: url(img/blog-image-hero.jpg);
+  background-size: cover;
+}
+
+/* ----- NAVIGATION ----- */
 
 nav > ul {
   display: flex;
@@ -27,8 +64,5 @@ nav > ul {
   margin: 0;
 }
 
-.container {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 1160px;
-}
+/* ----- MEDIA QUERIES ----- */
+
