@@ -256,6 +256,7 @@ nav > ul {
   }
 
   .blog-grid {
+    padding-top: 22px;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
